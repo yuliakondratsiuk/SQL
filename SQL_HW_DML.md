@@ -78,7 +78,7 @@ WHERE name LIKE '%Anna%';
 ```
 SELECT *
 FROM students
-WHERE name LIKE '%_8%';
+WHERE name LIKE '%8';
 ```
 
 12. Вывести пользователей где в имени в есть буква а
