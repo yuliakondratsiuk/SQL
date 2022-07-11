@@ -8,7 +8,7 @@
 - employee_name. Varchar(50), not null
   Наполнить таблицу employee 70 строками.
 
-```
+```SQL
 create table employees(
 id serial primary key,
 employee_name Varchar(50) not null
@@ -111,7 +111,7 @@ values ('Marcus'),
 - 2400
 - 2500
 
-```
+```SQL
 create table salary(
 	id serial primary key,
 	monthly_salary INT not null
@@ -146,7 +146,7 @@ values (1000),
   Наполнить таблицу employee_salary 40 строками:
 - в 10 строк из 40 вставить несуществующие employee_id
 
-```
+```SQL
 create table employee_salary(
 	id serial primary key,
 	emplayee_id INT not null unique,
@@ -205,7 +205,7 @@ values (3,7),
   Поменять тип столба role_name с int на varchar(30)
   Наполнить таблицу roles 20 строками:
 
-```
+```SQL
 create table roles(
 id serial primary key,
 role_name INT not null unique
@@ -246,7 +246,7 @@ values ('Junior Python developer'),
 - role_id. Int, not null (внешний ключ для таблицы roles, поле id)
   Наполнить таблицу roles_employee 40 строками:
 
-```
+```SQL
 create table roles_employee(
 id serial primary key,
 employee_id INT not null unique,
